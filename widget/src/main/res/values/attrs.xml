@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
+  -->
+<resources>
+    <declare-styleable name="etv">
+        <attr name="ellipsize" format="string">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+        </attr>
+        <attr name="maxlines" format="integer"/>
+        <attr name="substitution" format="string"/>
+    </declare-styleable>
+</resources>

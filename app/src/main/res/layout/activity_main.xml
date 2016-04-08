@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
+  -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.klisly.ellipsizedemo.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <com.klisly.widget.EllipsizingTextView
+            android:text="正常"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+    />
+    <com.klisly.widget.EllipsizingTextView
+            android:text="日前，习近平对在全党开展“两学一做”学习教育作出重要指示，强调“两学一做”学习教育是加强党的思想政治建设的一项重大部署，是协调推进“四个全面”战略布局特别是推动全面从严治党向基层延伸的有力抓手。学习党章党规是“两学一做”的重要内容，新华网“学习进行时”带您一起重温习近平关于党章党规的论述。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <com.klisly.widget.EllipsizingTextView
+            android:text="开始省略"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+    />
+    <com.klisly.widget.EllipsizingTextView
+            android:text="日前，习近平对在全党开展“两学一做”学习教育作出重要指示，强调“两学一做”学习教育是加强党的思想政治建设的一项重大部署，是协调推进“四个全面”战略布局特别是推动全面从严治党向基层延伸的有力抓手。学习党章党规是“两学一做”的重要内容，新华网“学习进行时”带您一起重温习近平关于党章党规的论述。"
+            app:ellipsize="start"
+            app:maxlines="3"
+            app:substitution="******"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <com.klisly.widget.EllipsizingTextView
+            android:text="中间省略"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+    />
+    <com.klisly.widget.EllipsizingTextView
+        android:text="日前，习近平对在全党开展“两学一做”学习教育作出重要指示，强调“两学一做”学习教育是加强党的思想政治建设的一项重大部署，是协调推进“四个全面”战略布局特别是推动全面从严治党向基层延伸的有力抓手。学习党章党规是“两学一做”的重要内容，新华网“学习进行时”带您一起重温习近平关于党章党规的论述。"
+        app:ellipsize="middle"
+        app:maxlines="2"
+        app:substitution="......"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.klisly.widget.EllipsizingTextView
+            android:text="结尾省略"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+    />
+    <com.klisly.widget.EllipsizingTextView
+            android:text="日前，习近平对在全党开展“两学一做”学习教育作出重要指示，强调“两学一做”学习教育是加强党的思想政治建设的一项重大部署，是协调推进“四个全面”战略布局特别是推动全面从严治党向基层延伸的有力抓手。学习党章党规是“两学一做”的重要内容，新华网“学习进行时”带您一起重温习近平关于党章党规的论述。"
+            app:ellipsize="end"
+            app:maxlines="3"
+            app:substitution="******"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
